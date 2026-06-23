@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recibo Telefónico</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff;
+}
+
+.contenedor{
+    width: 700px;
+    margin: 20px auto;
+    background-color: #7ec8ff;
+    padding: 20px;
+    border: 1px solid #004080;
+}
+
+h1{
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    font-size: 42px;
+    color: #00264d;
+}
+
+fieldset{
+    border: 1px solid #004080;
+    margin-bottom: 10px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+input[type="text"]{
+    width: 80px;
+}
+
+button{
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+
+    <h1>RECIBO TELEFONICO</h1>
+
+    <form>
+
+        <fieldset>
+            Minutos de llamadas a celular: (1.00 c/u)
+            <input type="text" name="minutos">
+        </fieldset>
+
+        <fieldset>
+            <legend>Tipo de plan</legend>
+
+            <input type="radio" name="plan">
+            Solo teléfono (200.00)
+            <br>
+
+            <input type="radio" name="plan">
+            Teléfono + Internet (450.00)
+            <br>
+
+            <input type="radio" name="plan">
+            Teléfono + Internet + TV (850.00)
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros Servicios</legend>
+
+            <input type="checkbox">
+            Antivirus (30.00)
+            <br>
+
+            <input type="checkbox">
+            Servicios de nube (50.00)
+            <br>
+
+            <input type="checkbox">
+            Servicios web (40.00)
+        </fieldset>
+
+        <fieldset>
+            <legend>Paquetes</legend>
+
+            <select>
+                <option>Residencial +0%</option>
+                <option>Empresarial +10%</option>
+                <option>Premium +20%</option>
+            </select>
+        </fieldset>
+
+        <button type="button">Calcular Recibo</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
