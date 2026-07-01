@@ -44,6 +44,7 @@ button{
 }
 </style>
 </head>
+
 <body>
 
 <div class="contenedor">
@@ -54,54 +55,56 @@ button{
 
         <fieldset>
             Minutos de llamadas a celular: (1.00 c/u)
-            <input type="text" name="minutos">
+            <input type="text" id="minutos" name="minutos">
         </fieldset>
 
         <fieldset>
             <legend>Tipo de plan</legend>
 
-            <input type="radio" name="plan">
+            <input type="radio" id="plan1" name="plan">
             Solo teléfono (200.00)
             <br>
 
-            <input type="radio" name="plan">
+            <input type="radio" id="plan2" name="plan">
             Teléfono + Internet (450.00)
             <br>
 
-            <input type="radio" name="plan">
+            <input type="radio" id="plan3" name="plan">
             Teléfono + Internet + TV (850.00)
         </fieldset>
 
         <fieldset>
             <legend>Otros Servicios</legend>
 
-            <input type="checkbox">
+            <input type="checkbox" id="antivirus">
             Antivirus (30.00)
             <br>
 
-            <input type="checkbox">
+            <input type="checkbox" id="nube">
             Servicios de nube (50.00)
             <br>
 
-            <input type="checkbox">
+            <input type="checkbox" id="web">
             Servicios web (40.00)
         </fieldset>
 
         <fieldset>
             <legend>Paquetes</legend>
 
-            <select>
+            <select id="paquete">
                 <option>Residencial +0%</option>
                 <option>Empresarial +10%</option>
                 <option>Premium +20%</option>
             </select>
         </fieldset>
 
-        <button type="button">Calcular Recibo</button>
+        <button type="button" id="btncalcular">Calcular Recibo</button>
 
     </form>
 
 </div>
+
+<script src="java.js"></script>
 
 </body>
 </html>
