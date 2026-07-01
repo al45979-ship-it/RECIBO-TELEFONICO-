@@ -2,9 +2,9 @@ document.getElementById("btncalcular").addEventListener("click", calcular);
 
 function calcular() {
 
-    let minutos = parseFloat(document.getElementById("minutos").value) || 0;
+    var minutos = parseFloat(document.getElementById("minutos").value) || 0;
 
-    let total = minutos * 1;
+    var total = minutos * 1;
 
     // Plan
     if (document.getElementById("plan1").checked) {
@@ -29,7 +29,7 @@ function calcular() {
     }
 
     // Paquete
-    let paquete = document.getElementById("paquete").selectedIndex;
+    var paquete = document.getElementById("paquete").selectedIndex;
 
     if (paquete == 1) {
         total = total * 1.10;
